@@ -17,6 +17,13 @@
     <ul id="shopList"></ul>
 
     <script>
+        let selectELM=document.getElementById('select_item');
+        selectELM.addEventListener('change',function(){
+            let ulELM=document.getElementsByTagName('ul')[0];
+            let liELM=document.createElement('li');
+            liELM.innerText=this.value;
+            ulELM.appendChild(liELM);
+        })
         
         // add code here
         
